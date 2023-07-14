@@ -1,0 +1,16 @@
+@media screen and (max-width: 795px) {
+
+    .fixed_bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left_bar_fixed li {
+        display: none;
+    }
+
+    .right_bar_fixed {
+        display: none;
+    }
+}
