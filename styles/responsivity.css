@@ -10,7 +10,125 @@
         display: none;
     }
 
-    .right_bar_fixed {
+    .language_logo,
+    .signin,
+    .download {
         display: none;
     }
+
+    .menu-open {
+        cursor: pointer;
+        color: #fff;
+        height: 51.8px;
+        width: auto;
+        width: 50px;
+        background-color: #0078f2;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        display: inherit;
+    }
+
+
+    .menu-close {
+        cursor: pointer;
+        color: #fff;
+        height: 51.8px;
+        width: auto;
+        width: 50px;
+        background-color: #0078f2;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .inside-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        background-color: rgb(42, 42, 42);
+        width: 250px;
+        height: 90.8vh;
+    }
+
+    .ajust li {
+        margin-top: 50px;
+    }
+
+    .ajust a {
+        color: #bdc7c7;
+        text-decoration: none;
+        position: relative;
+        font-weight: bolder;
+    }
+
+    .ajust {
+        height: 90.8vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ajust a::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #0078f2;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+    }
+
+    .main-menu {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .ajust a:hover:after {
+        transform: scaleX(1);
+    }
+
+    #download {
+        position: absolute;
+        bottom: 0;
+        height: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inside-menu {
+        display: none;
+    }
+
+    .main-container {
+        position: relative;
+    }
+
+    #language-menu {
+        margin-left: 15px;
+        font-weight: 200;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span.material-symbols-outlined#language-menu {
+        font-size: 50px;
+    }
+
+    .language-container {
+        margin-left: -10px;
+        width: 250px;
+    }
+
+    .language-container:hover {
+        cursor: pointer;
+    }
+
 }

@@ -91,14 +91,24 @@ ul a:hover::after {
 
 .logo {
     margin-left: 20px;
+    margin-right: -60px;
 }
 
-.logo,
 .language_logo {
-    margin-right: -75px;
+    height: 51.8px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px
 }
 
-.language_logo img:hover {
+span.material-symbols-outlined {
+    font-size: 40px;
+}
+
+
+.language_logo:hover {
     cursor: pointer;
 }
 
@@ -136,4 +146,34 @@ ul a:hover::after {
     margin-left: -25px;
     width: 120%;
     margin-right: 50px;
+}
+
+.menu-open,
+.menu-close {
+    display: none;
+}
+
+.inside-menu {
+    display: none;
+}
+
+.language-main {
+    position: absolute;
+    right: 0;
+    height: 20vh;
+    margin-right: 145px;
+    width: 250px;
+    background-color: rgb(42, 42, 42);
+    display: none;
+}
+
+.english,
+.portugues {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.english:hover,
+.portugues:hover {
+    cursor: pointer;
 }
